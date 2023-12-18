@@ -16,11 +16,15 @@
           </div>
           <div class="line_2"></div>
         </div>
-        <div class="first_box">
+        <div
+          class="first_box"
+          onclick="handleFirstBox('radio_first')"
+          id="first-box"
+        >
           <div class="first_box_content">
             <div class="left_content">
               <label class="custom-radio">
-                <input type="radio" name="custom-radio" checked />
+                <input type="radio" name="custom-radio" id="radio_first" />
                 <span class="checkmark"></span>
               </label>
               <div class="first_pair">
@@ -32,7 +36,7 @@
               <span>50% OFF</span>
             </div>
           </div>
-          <div class="first_box_size_color">
+          <div class="first_box_size_color" id="firstBox">
             <div class="sr_no">
               <div class="sr_no_1"><span>#1</span></div>
               <div class="sr_no_2"><span>#2</span></div>
@@ -65,11 +69,20 @@
             </div>
           </div>
         </div>
-        <div class="middle_box">
+        <div
+          class="middle_box"
+          onclick="handleMiddleBox('radio_middle')"
+          id="middle-box"
+        >
           <div class="first_box_content">
             <div class="left_content">
               <label class="custom-radio">
-                <input type="radio" name="custom-radio" checked />
+                <input
+                  type="radio"
+                  name="custom-radio"
+                  checked
+                  id="radio_middle"
+                />
                 <span class="checkmark"></span>
               </label>
               <div class="first_pair">
@@ -86,7 +99,7 @@
               <span id="off">40% OFF</span>
             </div>
           </div>
-          <div class="middle_box_size_color">
+          <div class="middle_box_size_color" id="middleBox">
             <div class="sr_no">
               <div class="sr_no_1"><span>#1</span></div>
               <div class="sr_no_2"><span>#2</span></div>
@@ -119,11 +132,15 @@
             </div>
           </div>
         </div>
-        <div class="last_box">
+        <div
+          class="last_box"
+          onclick="handleLastBox('radio_last')"
+          id="last-box"
+        >
           <div class="first_box_content">
             <div class="left_content">
               <label class="custom-radio">
-                <input type="radio" name="custom-radio" checked />
+                <input type="radio" name="custom-radio" id="radio_last" />
                 <span class="checkmark"></span>
               </label>
               <div class="first_pair">
@@ -135,7 +152,7 @@
               <span>60% OFF</span>
             </div>
           </div>
-          <div class="last_box_size_color">
+          <div class="last_box_size_color" id="lastBox">
             <div class="sr_no">
               <div class="sr_no_1"><span>#1</span></div>
               <div class="sr_no_2"><span>#2</span></div>
@@ -186,5 +203,6 @@
         </div>
       </div>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
