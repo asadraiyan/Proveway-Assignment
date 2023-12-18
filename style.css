@@ -149,8 +149,6 @@
 }
 .cross_price {
   display: flex;
-  align-items: center;
-  position: relative;
   align-items: flex-end;
 }
 .cross_price span {
@@ -161,14 +159,15 @@
   font-weight: 400;
   line-height: normal;
   opacity: 0.5;
+  text-decoration: line-through;
 }
-.line_cut {
+/* .line_cut {
   position: absolute;
   width: 56.036px;
   height: 0.678px;
   background: #9f9f9f;
   top: 26.5px;
-}
+} */
 .right_content span {
   color: #000;
   font-family: Metropolis;
